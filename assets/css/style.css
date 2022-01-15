@@ -1,0 +1,41 @@
+/* Setting up Variable colors */
+:root {
+    --dark: black;
+    --lighter: grey;
+    --bright: white;
+}
+
+/* What the background color, font color, and font type is for the Website */
+body {
+    background-color: var(--dark);
+    color: var(--bright);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    position: absolute;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+header nav {
+    padding-top: 20px;
+    float: center;
+}
+
+header nav ul {
+    list-style-type: none
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+
