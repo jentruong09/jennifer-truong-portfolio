@@ -13,29 +13,54 @@ body {
 }
 
 header {
-    padding-top: 20px;
+    padding-top: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-/* Making the image sit behind the text */
-.header-image {
-    width: 50%;
-    max-height: 30%;
-    position: relative;
-    display: inline-block;
     border: 8px solid var(--dark);
     border-radius: 10px;
 }
 
-/* The header sits on top of the image */
-h1 {
+/* Making the image sit behind the text */
+.header-image {
+    width: 500px;
+    max-height: auto;
+    position: relative;
+    display: inline-flex;
+    margin: 0 600px 0 0;
+}
+
+
+/* The header sits on top of the image and positioning it so they are not parallel. */
+header h1 .jennifer {
     position: absolute;
     z-index: 999;
     margin: 0 auto;
-    left: 20px;
+    left: 0;
+    right: 250px;
+    top: 13%;
+    font-size: 50px;
+}
+
+header h1 .truong {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 250px;
     right: 0;
-    top: 20%
+    top: 18%;
+    font-size: 50px;
+}
+
+header h1 .line {
+    transform: rotate(-30deg);
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 10px;
+    right: 0;
+    top: 14%;
+    font-size: 40px;
+    color: var(--lighter)
 }
 
 /* The navigation bar also sits on top of the image. */
@@ -61,3 +86,14 @@ header nav ul li {
 .content-header {
 
 }
+
+main {
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+}
+
+color: linear-gradient(
+        rgba(13, 11, 47) 0%,
+        rgba(103, 67, 121) 100%,
+        rgba(93, 32, 113) 100%
+    );
