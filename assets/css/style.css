@@ -26,7 +26,7 @@ header {
     max-height: auto;
     position: relative;
     display: inline-flex;
-    margin: 0 600px 0 0;
+    margin: 0 500px 0 0;
 }
 
 
@@ -62,7 +62,7 @@ header h1 .line {
     top: 14%;
     font-size: 35px;
     color: var(--lighter);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* The navigation bar also sits on top of the image. */
@@ -88,20 +88,7 @@ header nav ul li {
     color: var(--bright);
 }
 
-header .quote {
-    display: inline-block;
-    position: flex;
-    font-size: 13.5px;
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    line-height: 30px;
-    margin-top: -90px
-}
-
-/* Getting rid of the underline and color change for the link. As well as adding color to it when
+/* Getting rid of the underline and color change for the link. As well as adding a background to it when
 someone hovers over it */
 a:link {
     text-decoration: none;
@@ -116,11 +103,24 @@ a:hover {
     background-color: var(--lighter);
 }
 
+/* Making the quote sit on the header correctly. */
+header .quote {
+    display: block;
+    font-size: 13px;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    line-height: 30px;
+    margin-top: -80px
+}
+
 /* creating a box around each of the article section */
 .full-content {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     min-height: 150%;
     padding: 0.5rem 1rem;
     color: var(--bright);
@@ -130,18 +130,34 @@ a:hover {
     border-radius: 15px;
 }
 
-/* creating a box around each of header of the article section. */
+/* Creating a box around each of header of the article section and moving them so they sit on the top link of
+the content border. Also made sure the background and border is only on the words, not fit to the page. */
 .full-content .content-header {
     position: relative;
     margin: 1rem 0 1rem 0;
     margin-top: -20px;
     padding: 0.25rem 1rem;
     max-height: 24px;
+    width: fit-content;
     background-color: var(--lighter);
     outline: 2px solid var(--lighter);
     outline-offset: -2px;
     transition: all 0.5s ease-in-out;
     border-radius: 20px;
+    left: 50px;
+
+}
+
+#work ul li {
+    display: flex;
+    flex-direction: row;
+    min-height: 100%;
+    padding: 0.5rem 1rem;
+    outline: 2px solid var(--lighter);
+    border-radius: 10px;
+    margin: 30px;
+    
+
 }
 
 
