@@ -148,18 +148,44 @@ the content border. Also made sure the background and border is only on the word
 
 }
 
-#work ul li {
+/* Creates a border around each of the works so that they have it's own area. */
+#work .content-work {
     display: flex;
-    flex-direction: row;
+    position:relative;
+    flex-direction: column;
     min-height: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 1rem;
+    z-index: 999;
+}
+
+/* Creating the background for each of the 'coming soon' under my work. */
+#work .content-work .pic1 {
     outline: 2px solid var(--lighter);
     border-radius: 10px;
     margin: 30px;
-    
-
+    position: relative;
+    display: inline;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
 }
 
+#work .content-work h3 {
+    position: absolute;
+    top: 150px;
+    left: 500px;
+}
+
+#work ul li .pic1 {
+    /* width: 500px;
+    max-height: auto;
+    position: relative;
+    display: inline-flex;
+    margin: 0 500px 0 0; */
+}
 
 color: linear-gradient(
         rgba(13, 11, 47) 0%,
