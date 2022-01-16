@@ -1,7 +1,7 @@
 /* Setting up Variable colors */
 :root {
     --dark: black;
-    --lighter: grey;
+    --lighter: rgb(112, 106, 106);
     --bright: white;
 }
 
@@ -51,6 +51,7 @@ header h1 .truong {
     font-size: 50px;
 }
 
+/* Making the line look like it is going through in between first and last name */
 header h1 .line {
     transform: rotate(-30deg);
     position: absolute;
@@ -60,7 +61,8 @@ header h1 .line {
     right: 0;
     top: 14%;
     font-size: 40px;
-    color: var(--lighter)
+    color: var(--lighter);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 /* The navigation bar also sits on top of the image. */
@@ -76,14 +78,56 @@ header nav {
 }
 
 header nav ul {
-    list-style-type: none
+    list-style-type: none;
 }
 
 header nav ul li {
     display: inline-block;
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--bright);
 }
 
-.content-header {
+/* Getting rid of the underline and color change for the link. As well as adding color to it when
+someone hovers over it */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--bright);
+}
+
+a:hover {
+    background-color: var(--lighter);
+}
+
+/* creating a box around the header of each section */
+.full-content {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+    min-height: 80%;
+    padding: .5rem .5rem;
+    color: var(--bright);
+    outline: 2px solid var(--lighter);
+    transition: all 1s ease-in-out;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+.full-content .content-header {
+    position: relative;
+    margin: -3rem 0 1rem 0;
+    padding: 0.5rem 0.5rem;
+    background-color: var(--lighter);
+    outline: 2px solid var(--lighter);
+    outline-offset: -5px;
+    transition: all 1s ease-in-out;
+    border-radius: 25px;
+}
+
 
 }
 
