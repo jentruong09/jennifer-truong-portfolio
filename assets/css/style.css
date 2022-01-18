@@ -27,6 +27,7 @@ header {
     position: relative;
     display: inline-flex;
     margin: 0 500px 0 0;
+    z-index: 1;
 }
 
 
@@ -159,7 +160,6 @@ the content border. Also made sure the background and border is only on the word
     flex-direction: column;
     min-height: 100%;
     padding: 0.25rem 1rem;
-    z-index: 999;
 }
 
 /* Creating the background for each of the 'coming soon' under my work. */
@@ -213,6 +213,13 @@ footer h4 {
     color: var(--bright);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
+
+/* Using media query to get rid of extra margin on the side when the page is shrunk. */
+@media screen and (max-width: 1026px) {
+    .header-image {
+        margin: 0 0 0 0;
+    }
 }
 
 color: linear-gradient(
