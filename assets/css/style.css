@@ -105,7 +105,7 @@ a:hover {
     background-color: var(--lighter);
 }
 
-/* Making the quote sit on the header correctly. */
+/* Making the quote sit on the header correctly and under the navigation bar. */
 header .quote {
     display: block;
     font-size: 13px;
@@ -121,7 +121,7 @@ header .quote {
     bottom: 100px;
 }
 
-/* creating a box around each of the article section */
+/* Creating a box around each of the article sections */
 .full-content {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -150,7 +150,7 @@ the content border. Also made sure the background and border is only on the word
     left: 50px;
 }
 
-/* Styling for the about me section of the webpage. */
+/* Styling for the avatarr picture and the description in the about me section of the webpage. */
 #about .avatar {
     height: 250px;
     width: 375px;
@@ -188,7 +188,7 @@ the content border. Also made sure the background and border is only on the word
     border-radius: 20px;
 }
 
-/* Creating the background for each of the 'coming soon' under my work. */
+/* Creating the background for each of the 'coming soon' under my work. Making sure that each of the content boxes fit within the 'my work' section. */
 #work .content-work a {
     outline: 2px solid var(--lighter);
     border-radius: 8px;
