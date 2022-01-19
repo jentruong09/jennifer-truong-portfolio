@@ -130,7 +130,6 @@ header .quote {
     padding: 0.5rem 1rem;
     color: var(--bright);
     outline: 2px solid var(--lighter);
-    transition: all 1s ease-in-out;
     margin: 40px;
     border-radius: 15px;
 }
@@ -147,10 +146,24 @@ the content border. Also made sure the background and border is only on the word
     background-color: var(--lighter);
     outline: 2px solid var(--lighter);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
     border-radius: 20px;
     left: 50px;
+}
 
+#about .avatar {
+    height: 250px;
+    width: 375px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#about p {
+    padding: 0 20px 20px 0;
+    color: var(--bright);
+    text-align: center;
+    float: right;
 }
 
 /* Making sure that the the text in the area will wrap- once anything is added. */
