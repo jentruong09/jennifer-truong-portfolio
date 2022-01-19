@@ -1,1 +1,7 @@
-# jennifer-truong-portfolio
+# Jennifer Truong Portfolio
+
+## Project Description 
+
+
+
+
