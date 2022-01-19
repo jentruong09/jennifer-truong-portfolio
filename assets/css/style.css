@@ -156,7 +156,7 @@ the content border. Also made sure the background and border is only on the word
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 #about p {
@@ -172,7 +172,19 @@ the content border. Also made sure the background and border is only on the word
     position:relative;
     flex-direction: column;
     min-height: 100%;
-    padding: 0.25rem 1rem;
+    padding: 1rem 2rem;
+}
+
+/* When hovering over work, they will enlarge. */
+.content-work:hover {
+    position: relative;
+    top: -30px;
+    right: -20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: var(--lighter);
+    background-size: 10%;
 }
 
 /* Creating the background for each of the 'coming soon' under my work. */
