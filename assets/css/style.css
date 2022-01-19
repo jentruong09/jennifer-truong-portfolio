@@ -150,6 +150,7 @@ the content border. Also made sure the background and border is only on the word
     left: 50px;
 }
 
+/* Styling for the about me section of the webpage. */
 #about .avatar {
     height: 250px;
     width: 375px;
@@ -178,22 +179,21 @@ the content border. Also made sure the background and border is only on the word
 /* When hovering over work, they will enlarge. */
 .content-work:hover {
     position: relative;
-    top: -30px;
-    right: -20px;
+    top: -15px;
+    right: -7px;
     width: 100%;
     height: auto;
     display: block;
     background-color: var(--lighter);
-    background-size: 10%;
+    border-radius: 20px;
 }
 
 /* Creating the background for each of the 'coming soon' under my work. */
-#work .content-work .pic1 {
+#work .content-work a {
     outline: 2px solid var(--lighter);
-    border-radius: 10px;
-    position: relative;
-    display: inline;
-    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     background-position: center;
     background-size: cover;
     margin-bottom: 30px;
@@ -201,7 +201,7 @@ the content border. Also made sure the background and border is only on the word
 
 /* Making sure that the coming soon words sit on top of the image, even when the page is shrunk. */
 #work .content-work h3 {
-    display: inline-block;
+    display: inline;
     text-align: center;
     position: absolute;
     z-index: 999;
@@ -246,9 +246,3 @@ footer h4 {
         margin: 0 0 0 0;
     }
 }
-
-color: linear-gradient(
-        rgba(13, 11, 47) 0%,
-        rgba(103, 67, 121) 100%,
-        rgba(93, 32, 113) 100%
-    );
