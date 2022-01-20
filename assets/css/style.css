@@ -117,6 +117,7 @@ header .quote {
     line-height: 30px;
     margin-top: -80px
 }
+/* Giving the about me section some more space at the bottom of it. */
 .content {
     bottom: 100px;
 }
