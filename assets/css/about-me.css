@@ -1,0 +1,174 @@
+/* Setting up Variable colors */
+:root {
+    --dark: black;
+    --lighter: rgb(112, 106, 106);
+    --bright: white;
+}
+
+/* What the background color, font color, and font type is for the Website */
+body {
+    background-color: var(--dark);
+    color: var(--bright);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    padding-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border: 8px solid var(--dark);
+    border-radius: 10px;
+}
+
+/* Making the image sit behind the text */
+.header-image {
+    width: 500px;
+    max-height: auto;
+    position: relative;
+    display: inline-flex;
+    margin: 0 500px 0 0;
+    z-index: 1;
+}
+
+
+/* The header sits on top of the image and positioning it so they are not parallel. */
+header h1 .jennifer {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 250px;
+    top: 13%;
+    font-size: 50px;
+}
+
+header h1 .truong {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 250px;
+    right: 0;
+    top: 18%;
+    font-size: 50px;
+}
+
+/* Making the line look like it is going through in between first and last name */
+header h1 .line {
+    transform: rotate(-30deg);
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 10px;
+    right: 0;
+    top: 14%;
+    font-size: 35px;
+    color: var(--lighter);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* The navigation bar also sits on top of the image. */
+header nav {
+    padding-top: 30px;
+    float: center;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 35%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--bright);
+}
+
+/* Getting rid of the underline and color change for the link. As well as adding a background to it when
+someone hovers over it */
+a:link {
+    text-decoration: none;
+    color: var(--bright);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--bright);
+}
+
+a:hover {
+    background-color: var(--lighter);
+}
+
+/* Giving the about me section some more space at the bottom of it. */
+.content {
+    bottom: 100px;
+}
+
+/* Creating a box around each of the article sections */
+.full-content {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 150%;
+    padding: 0.5rem 1rem;
+    color: var(--bright);
+    outline: 2px solid var(--lighter);
+    margin: 40px;
+    border-radius: 15px;
+}
+
+/* Creating a box around each of header of the article section and moving them so they sit on the top link of
+the content border. Also made sure the background and border is only on the words, not fit to the page. */
+.full-content .content-header {
+    position: relative;
+    margin: 1rem 0 1rem 0;
+    margin-top: -20px;
+    padding: 0.25rem 1rem;
+    max-height: 24px;
+    width: fit-content;
+    background-color: var(--lighter);
+    outline: 2px solid var(--lighter);
+    outline-offset: -2px;
+    border-radius: 20px;
+    left: 50px;
+}
+
+/* Styling for the avatarr picture and the description in the about me section of the webpage. */
+#about .avatar {
+    height: 250px;
+    width: 375px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#about p {
+    padding: 0 20px 20px 0;
+    color: var(--bright);
+    text-align: center;
+    float: right;
+}
+
+/* Styling the footer */
+footer h4 {
+    text-align: center;
+    margin: 50px 0 0 0;
+    padding: 3rem 1rem;
+    color: var(--bright);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* Using media query to get rid of extra margin on the side when the page is shrunk. */
+@media screen and (max-width: 1026px) {
+    .header-image {
+        margin: 0 0 0 0;
+    }
+}

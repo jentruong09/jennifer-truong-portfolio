@@ -105,14 +105,13 @@ a:hover {
     background-color: var(--lighter);
 }
 
-
 /* Creating a box around each of the article sections */
 .full-content {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     min-height: 150%;
-    /* padding: 0.5rem 1rem; */
+    padding: 0.5rem 1rem;
     color: var(--bright);
     outline: 2px solid var(--lighter);
     margin: 40px;
@@ -135,51 +134,23 @@ the content border. Also made sure the background and border is only on the word
     left: 50px;
 }
 
-/* Making sure that the the text in the area will wrap- once anything is added. */
-#work .content-work {
-    display: flex;
-    position:relative;
-    flex-direction: column;
-    min-height: 100%;
-    padding: 1rem 2rem;
-}
 
-/* When hovering over work, they will enlarge. */
-.content-work:hover {
-    position: relative;
-    top: -15px;
-    right: -7px;
-    width: 100%;
-    height: auto;
-    display: block;
-    background-color: var(--lighter);
-    border-radius: 20px;
-}
-
-/* Creating the background for each of the 'coming soon' under my work. Making sure that each of the content boxes fit within the 'my work' section. */
-#work .content-work a {
-    outline: 2px solid var(--lighter);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 30px;
-}
-
-/* Making sure that the coming soon words sit on top of the image, even when the page is shrunk. */
-#work .content-work h3 {
-    display: inline;
+/* Styling for the contact list - changing it so that all the words are in a row 
+and do not change color when clicked */
+#contact ul{
+    list-style-type: none;
     text-align: center;
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 40%;
-    width: 60%;
+    font-size: 20px;
+    padding: 2rem 1rem;
+    color: var(--bright);
 }
 
+#contact ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--bright);
+}
 
 /* Styling the footer */
 footer h4 {
