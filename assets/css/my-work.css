@@ -13,69 +13,26 @@ body {
 }
 
 header {
-    padding-top: 10px;
+    padding-top: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     border: 8px solid var(--dark);
     border-radius: 10px;
 }
 
-/* Making the image sit behind the text */
-.header-image {
-    width: 500px;
-    max-height: auto;
-    position: relative;
-    display: inline-flex;
-    margin: 0 500px 0 0;
-    z-index: 1;
-}
-
-
 /* The header sits on top of the image and positioning it so they are not parallel. */
-header h1 .jennifer {
+header h1 .name {
     position: absolute;
     z-index: 999;
     margin: 0 auto;
     left: 0;
-    right: 250px;
-    top: 13%;
-    font-size: 50px;
-}
-
-header h1 .truong {
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 250px;
-    right: 0;
-    top: 18%;
-    font-size: 50px;
-}
-
-/* Making the line look like it is going through in between first and last name */
-header h1 .line {
-    transform: rotate(-30deg);
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 10px;
-    right: 0;
-    top: 14%;
-    font-size: 35px;
-    color: var(--lighter);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    margin-left: 30px;
 }
 
 /* The navigation bar also sits on top of the image. */
 header nav {
-    padding-top: 30px;
-    float: center;
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 35%;
+    margin-right: 30px;
 }
 
 header nav ul {
@@ -83,7 +40,6 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline-block;
     margin-left: 25px;
     text-decoration: none;
     color: var(--bright);
@@ -102,9 +58,8 @@ a:visited {
 }
 
 a:hover {
-    background-color: var(--lighter);
+    box-shadow: 0 0 5px #fff, 3px 3px 6px 3px #0066ff;
 }
-
 
 /* Creating a box around each of the article sections */
 .full-content {
@@ -112,27 +67,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     min-height: 150%;
-    /* padding: 0.5rem 1rem; */
-    color: var(--bright);
-    outline: 2px solid var(--lighter);
-    margin: 40px;
+    padding: 0.5rem 1rem;
+    outline: 2px solid var(--dark);
+    /* margin: 40px; */
     border-radius: 15px;
+    /* box-shadow: 20px 20px 20px 15px #0066ff; */
+
 }
 
-/* Creating a box around each of header of the article section and moving them so they sit on the top link of
-the content border. Also made sure the background and border is only on the words, not fit to the page. */
-.full-content .content-header {
-    position: relative;
-    margin: 1rem 0 1rem 0;
-    margin-top: -20px;
-    padding: 0.25rem 1rem;
-    max-height: 24px;
-    width: fit-content;
-    background-color: var(--lighter);
-    outline: 2px solid var(--lighter);
-    outline-offset: -2px;
-    border-radius: 20px;
-    left: 50px;
+#work {
+    margin-top: 100px;
 }
 
 /* Making sure that the the text in the area will wrap- once anything is added. */
@@ -142,23 +86,34 @@ the content border. Also made sure the background and border is only on the word
     flex-direction: column;
     min-height: 100%;
     padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+.title {
+    font-weight: bolder;
+}
+
+.card-img-top {
+    border-radius: 8px;
+}
+
+.card-top {
+    border-radius: 8px;
+    margin-bottom: 100px;
 }
 
 /* When hovering over work, they will enlarge. */
-.content-work:hover {
-    position: relative;
-    top: -15px;
-    right: -7px;
-    width: 100%;
-    height: auto;
-    display: block;
-    background-color: var(--lighter);
-    border-radius: 20px;
+.card-top:hover {
+    box-shadow: 0 0 10px #fff, 6px 6px 10px 8px #0066ff;
+    transform: scale(1.10);
+}
+
+img {
+    border-radius: 8px;
 }
 
 /* Creating the background for each of the 'coming soon' under my work. Making sure that each of the content boxes fit within the 'my work' section. */
 #work .content-work a {
-    outline: 2px solid var(--lighter);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
