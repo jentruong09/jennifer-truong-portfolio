@@ -28,10 +28,35 @@ This portfolio was created for the purposes of getting to know me as a developer
 
 ## Usage
 
-You will be able to see my newest work on this page. For now, the links will have place holders.
+<br/>
 
-![jennifer-truong-protfolio](/assets/images/webpage-screenshot.jpg)
 
+Home Page:
+
+<br/>
+
+![home](/assets/images/home.png)
+
+<br/>
+About Me Page:
+
+<br/>
+
+![about](/assets/images/home.png)
+
+<br/>
+My Work Page:
+
+<br/>
+
+![work](/assets/images/work.jpg)
+
+<br/>
+Contact Me Page:
+
+<br/>
+
+![contact](/assets/images/contact.png)
 
 <br/>
 
@@ -45,9 +70,17 @@ This project is made possible by:
 <br/>
 
 <cite> The Light in the Heart </cite> by Roy T. Bennett
->“Instead of worrying about what you cannot control, shift your energy to what you can create.” <br/>
+>“Instead of worrying about what you cannot control, shift your energy to what you can create.” 
 
+<br/>
 
+Technologies Used in this project:
+
+[Bootstrap](https://getbootstrap.com/)
+
+[Google Fonts](https://fonts.google.com/)
+
+[Fontawesome](https://fontawesome.com/)
 
 <br/>
 
