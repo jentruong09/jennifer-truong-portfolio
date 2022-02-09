@@ -91,6 +91,10 @@ a:hover {
 
 .title {
     font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .card-img-top {
@@ -102,8 +106,18 @@ a:hover {
     margin-bottom: 100px;
 }
 
+.repo-link {
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 /* When hovering over work, they will enlarge. */
-.card-top:hover {
+img:hover {
     box-shadow: 0 0 10px #fff, 6px 6px 10px 8px #0066ff;
     transform: scale(1.10);
 }
@@ -133,6 +147,10 @@ img {
     right: 0;
     top: 40%;
     width: 60%;
+}
+
+p {
+    line-height: .25in;
 }
 
 

@@ -105,7 +105,9 @@ footer h4 {
     padding: 3rem 1rem;
     color: var(--bright);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Using media query to get rid of extra margin on the side when the page is shrunk. */

@@ -72,7 +72,8 @@ a:hover {
     outline: 2px solid var(--dark);
     /* margin: 40px; */
     border-radius: 15px;
-    box-shadow: 20px 20px 20px 15px #0066ff;
+    /* box-shadow: 20px 20px 20px 15px #0066ff; */
+    padding-top: 300px;
 }
 
 /* Creating a box around each of header of the article section and moving them so they sit on the top link of
@@ -115,7 +116,10 @@ footer h4 {
     padding: 3rem 1rem;
     color: var(--bright);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
 }
 
 /* Using media query to get rid of extra margin on the side when the page is shrunk. */
