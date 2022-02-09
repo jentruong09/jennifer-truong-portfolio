@@ -77,7 +77,7 @@ a:hover {
 
 
 #about {
-    margin-top: 250px;
+    margin-top: 210px;
 }
 
 /* Styling for the avatarr picture and the description in the about me section of the webpage. */
@@ -110,9 +110,10 @@ footer h4 {
     width: 100%;
 }
 
-/* Using media query to get rid of extra margin on the side when the page is shrunk. */
-@media screen and (max-width: 1026px) {
-    .header-image {
-        margin: 0 0 0 0;
+/* Using media query fix the nav bar when in mobile */
+@media screen and (max-width: 775px) {
+    header nav li{
+        margin-top: 50px;
+        font-size: 15px;
     }
 }
