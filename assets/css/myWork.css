@@ -18,6 +18,10 @@ header {
     text-align: center;
     border: 8px solid var(--dark);
     border-radius: 10px;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: black;
 }
 
 /* The header sits on top of the image and positioning it so they are not parallel. */
